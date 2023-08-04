@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/bookmark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <div class="logo d-flex align-items-center">
+            <a href=""> <img class="me-3" src="imgs/logo.png" alt="" /> </a>
+            <h1 class="fs-6 text-white">
+              Weather <br />
+              <span>tagline goes here</span>
+            </h1>
+          </div>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navLogoLinks container collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navLinks m-auto d-flex list-unstyled justify-content-between align-items-center navbar-nav me-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item me-5 active">
+                <a
+                  class="nav-link px-4 py-1 active text-white text-decoration-none"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link px-4 py-1 text-white text-decoration-none"
+                  href="#"
+                  >News</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link px-4 py-1 text-white text-decoration-none"
+                  href="#"
+                  >Live cameras</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link px-4 py-1 text-white text-decoration-none"
+                  href="#"
+                  >Photos</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link px-4 py-1 text-white text-decoration-none"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <main>
+        <div class="container-fluid p-0">
+          <div class="searchBar">
+            <div class="row d-flex justify-content-center pt-5" id="search">
+              <div class="input-group w-50">
+                <input
+                  type="text"
+                  class="form-control searchBar1"
+                  placeholder="Find your location..."
+                  id="inputGroupFile04"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="weatherData">
+            <div id="weatherContainer">
+              <div
+                class="allWeather d-flex justify-content-center align-items-center text-center"
+              >
+                <div class="firstBox text-white w-25"></div>
+                <div class="forcBox forcastFirstBox text-white w-25"></div>
+                <div class="forcBox forcastSecBox text-white w-25"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer>
+      <div class="sub d-flex justify-content-between">
+        <div class="input-group mb-3 w-50">
+          <input
+            type="text"
+            class="form-control subFooter"
+            placeholder="Enter your email to subscribe..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f fs-3 mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fs-3 mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g fs-3 mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest fs-3 mx-2"></i></a>
+          </div>
+        </div>
+      </div>
+      <span class="text-white d-inline-block mt-3"
+        >Copyright 2014 Company name. Designed by Themezy. All rights
+        reserved</span
+      >
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
